@@ -36,7 +36,7 @@ public class studycasetodolist {
                 break;
             }
         }
-        // jika isFull, kita resize ukuran array 2x lipat
+        // resize
         if(isFull){
             var temp = model;
             model = new String [model.length * 2];
@@ -108,6 +108,15 @@ public class studycasetodolist {
         var channel = input("channel");
         System.out.println(channel);
     }
+
+    // Menghapus semua todolist
+    public static void removeAllTodolist(){
+        for(int i = 0 ; i < model.length ; i++){
+            model [i] = null;
+        }
+        System.out.println("Remove All Todolist Has Been Succesed");
+    }
+    
     // Menampilkan view todolist
     public static void viewShowTodolist(){
         while(true){
@@ -117,6 +126,7 @@ public class studycasetodolist {
         System.out.println("1. Add");
         System.out.println("2. Remove");
         System.out.println("3. Exit");
+        System.out.println("4. Remove all");
 
         var input = input("Choose ");
 
@@ -126,8 +136,11 @@ public class studycasetodolist {
             viewRemoveTodolist();
         }else if(input.equals("3")){
             break;
-        }else{
-            System.out.println("Pilihan tidak di mengerti");
+        }else if(input.equals("4")){
+            ViewRemoveAllTodolist();
+        }
+        else{
+            System.out.println("Invalid");
         }
     }
 
@@ -187,8 +200,15 @@ public class studycasetodolist {
 
         showTodolist();
     }
+    public static void ViewRemoveAllTodolist(){
+        var agreement = input("Are you agree to remove all to do list(choose 3 if u want to exit)");
+        if(agreement.equals("3")){
+            //batal
+        }else {
+            removeAllTodolist();
+        }
 
-
+    }
 
 
 }
