@@ -30,7 +30,7 @@ class Student {
 public class Main {
     public static void main(String[] args) {
         // Creating an object of the Student class
-        Student student1 = new Student("Calista", 19);
+        Student student1 = new Student("Dokja", 28);
         
         // Calling a method on the object
         student1.displayInfo();
@@ -39,8 +39,8 @@ public class Main {
 ```
 **Output:**
 ```
-Name: Calista
-Age: 19
+Name: Dokja
+Age: 28
 ```
 
 ## 4. Basic Structure of a Class
