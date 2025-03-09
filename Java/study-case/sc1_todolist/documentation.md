@@ -19,7 +19,7 @@ This project is a simple **To-Do List application** built using Java. The applic
 ### 🔹 How to Run
 1. **Clone or Download** the project.
 2. Open the project in your preferred IDE.
-3. Compile and run the `StudyCaseTodoList.java` file.
+3. Compile and run the `studycasetodolist.java` file.
 4. Interact with the console-based menu.
 
 ## 🚀 How It Works
@@ -31,7 +31,7 @@ This project is a simple **To-Do List application** built using Java. The applic
 ### 🏗️ Code Structure
 | File | Description |
 |------|-------------|
-| `StudyCaseTodoList.java` | Main application file, handles all to-do operations. |
+| `studycasetodoList.java` | Main application file, handles all to-do operations. |
 
 ### 📌 Key Methods
 | Method | Description |
