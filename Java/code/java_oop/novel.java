@@ -59,6 +59,6 @@ public class novel {
         hades.memberOrv(); // Output : Hi, my name is Hades and my weapon is Black bident
         
         System.out.println(dokja.name); //Dokja
-        System.out.println(gily.name); 
+        System.out.println(gily.name);  //Gilyoung
     }
 }
