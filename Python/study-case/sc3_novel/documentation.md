@@ -140,8 +140,8 @@ Choose genre :
 1. Non-Fiction
 2. Fiction
 Enter your choice : 1
-Enter the book title: The Art of War
-Enter the book author: Sun Tzu
+Enter the book title: Harry Potter
+Enter the book author: Jk Rowling
 The Art of War successfully added
 ```
 
