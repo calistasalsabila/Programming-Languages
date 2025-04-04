@@ -146,5 +146,5 @@ True or False
 
 ---
 
-Happy coding, Calista! 🚀📝
+Happy coding 🚀📝
 
