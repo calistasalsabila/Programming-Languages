@@ -9,7 +9,7 @@ Python provides built-in functions to work with files. File handling allows us t
 File handling enables programs to:
 - Save output or logs 📃  
 - Read large datasets 📊  
-- Process text, config, or user data 🖠️  
+- Process text, config, or user data 🔠️  
 - Build data pipelines for ML & apps 💻  
 
 ---
@@ -137,12 +137,37 @@ True or False
 
 ---
 
+## ⚛️ Seeking in a File with `file.seek()`
+
+`file.seek(offset)` lets you move the file cursor to a specific position.
+
+### 🔐 Example: Resetting File Pointer
+
+```python
+file = open("dokja_notes.txt", "r")
+print(file.read())      # Reads whole file
+file.seek(0)            # Move pointer back to beginning
+print(file.read())      # Reads again from start
+file.close()
+```
+
+**Output:**
+```
+Dokja: The world is cruel but I have a plan.
+Dokja: The world is cruel but I have a plan.
+```
+
+You can use `file.seek(position)` to go to any byte offset.
+
+---
+
 ## 📈 Summary
 
 - Use `open()` to work with files.
 - Modes: `'r'`, `'w'`, `'a'`, `'x'`, `'b'`, `'t'`
 - Always close the file (or use `with`).
 - Use `os` module for checking and deleting files.
+- Use `seek()` to move the file pointer.
 
 ---
 
