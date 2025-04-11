@@ -19,7 +19,7 @@ class Dog extends Animal implements Pet {
 }
 
 // MAIN CLASS
-public class Main {
+public class a {
     public static void main(String[] args) {
         Dog myDog = new Dog();
         myDog.breathe(); // Dari Animal (extends)
