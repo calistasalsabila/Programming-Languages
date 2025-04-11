@@ -1,4 +1,4 @@
-# Title: Importing All Classes from a Package in Java
+# Importing All Classes from a Package in Java
 
 ---
 
