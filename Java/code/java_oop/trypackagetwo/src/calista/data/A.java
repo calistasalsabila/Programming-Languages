@@ -1,7 +1,7 @@
 package calista.data;
 
-public class A {
-    public void hello() {
-        System.out.println("Ini A.java");
-    }
+public abstract class A {
+    
+    public String name; //public agar bisa di akses global
+    
 }

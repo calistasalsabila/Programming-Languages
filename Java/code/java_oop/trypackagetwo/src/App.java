@@ -2,10 +2,10 @@ import calista.data.*; //  Wildcard import
 
 public class App {
     public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
+        //  var B = new A()  ; Error, abstract class
+       var B = new B();
+       B.name = "Bzzzttt";
 
-        a.hello();
-        b.greet();
+       System.err.println(B.name);
     }
 }
