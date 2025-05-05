@@ -21,7 +21,7 @@ class Category {
     }
 }
 
-public class g {
+public class j {
     public static void main(String[] args) {
         var category = new Category(); // sama aja kayak Category category = new Category();
         category.setId("A");

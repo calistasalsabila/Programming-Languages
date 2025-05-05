@@ -13,7 +13,7 @@ class cat extends Animal {
     }
 }
 
-public class f {
+public class i {
     public static void main(String[] args) {
         cat Meo = new cat();
         Meo.name = "Meo";
