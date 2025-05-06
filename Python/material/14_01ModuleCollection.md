@@ -1,4 +1,4 @@
-# 🐍 Python `collections` Module - Complete Guide
+# 🐍 Python `collections` Module 
 
 The `collections` module in Python provides alternatives to the general-purpose built-in containers like `dict`, `list`, `set`, and `tuple`. It offers specialized container datatypes that can be more efficient and readable for certain tasks.
 
