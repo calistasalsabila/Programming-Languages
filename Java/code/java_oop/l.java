@@ -2,6 +2,10 @@ interface Car {
     void drive();
 
     int speed();
+
+    default void vroomVroom() { // Ga wajib di override
+        System.out.println("Vroom Vroom");
+    }
 }
 
 interface Engine extends Car {

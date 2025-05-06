@@ -1,4 +1,4 @@
-## 🔗 Interface Inheritance 
+## 🔗 Interface Inheritance in Java
 
 ### 📘 Definition
 

@@ -1,4 +1,4 @@
-## 🔍 Comparison: `extends` in Interface vs Class 
+## 🔍 Comparison: `extends` in Interface vs Class in Java
 
 ### 📘 Purpose
 

@@ -1,4 +1,4 @@
-## 🌟 Interface
+## 🌟 Interface in Java
 
 ### 📘 Definition
 

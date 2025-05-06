@@ -1,4 +1,4 @@
-# Java: Auto-Generate Getter and Setter in VS Code
+# Auto-Generate Getter and Setter in VS Code in Java
 
 ## 🎯 Purpose
 
