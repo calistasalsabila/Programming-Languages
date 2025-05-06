@@ -1,4 +1,4 @@
-## 🔗 Interface Inheritance in Java
+## 🔗 Interface Inheritance in Java 
 
 ### 📘 Definition
 
@@ -143,6 +143,7 @@ Java interface inheritance is a powerful way to create layered and modular behav
 > Prefer interface inheritance for flexible design — it's lightweight, clean, and powerful 🧠
 
 ---
+
 
 ### 📚 References
 

@@ -4,10 +4,10 @@
 
 An **interface** in Java is a **blueprint of a class** that can only contain *abstract methods* (before Java 8) and *constants*. Interfaces are used to achieve *abstraction* and *multiple inheritance* in Java.
 
-Starting from Java 8, interfaces can also have:
+Starting from Java 8, interfaces  can also have:
 
 * `default` methods (with implementation)
-* `static` methods
+* `static` methods 
 
 > Interface = a contract that must be followed by any class that implements it
 
@@ -158,7 +158,7 @@ Java interfaces are powerful tools for creating flexible, modular, and testable 
 
 ---
 
-### 📚 Additional References
+### 📚 Additional References 
 
 * [Oracle Java Interface Documentation](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 * Book: *Effective Java* by Joshua Bloch (Items on Interfaces)

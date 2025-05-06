@@ -120,10 +120,11 @@ class Dazai extends Character {
 
 ---
 
-### 🧠 Quick Mnemonic
+### 🧠 Quick Mnemonic 
 
 > 🔗 `interface extends interface`: Like blueprint stacking 📐
 > 🧱 `class extends abstract class`: Like building on a foundation 🏗️
 > 🧬 `class extends class`: Like child inherits parent DNA 🧬
+
 
 ---

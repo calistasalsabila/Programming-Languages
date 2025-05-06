@@ -108,4 +108,4 @@ public void setUmur(int umur) {
 
 With the right extensions, VS Code can function like a lightweight Java IDE. By generating boilerplate code like getters and setters, you can focus more on logic and architecture — not syntax repetition.
 
-Use tools smartly, code cleanly, and make Dokja, Jeha, Hamin, and Dazai proud developers! 💻✨
+Use tools smartly, code cleanly 💻✨
