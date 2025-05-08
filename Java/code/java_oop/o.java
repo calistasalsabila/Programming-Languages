@@ -1,12 +1,10 @@
 class ORV {
     String name;
     String title;
-
-
     
 }
 
-final class Dokja extends ORV{
+final class Dokja extends ORV {
     void title() {
         System.out.println("Dokja koma");
     }
@@ -14,5 +12,19 @@ final class Dokja extends ORV{
 
 // class Jeha extends Dokja {
 
-// } error 
+// } ERROR
+
+class Constellation {
+    final void say() {
+        System.out.println("Dokja wake up!!!!");
+    }
+}
+
+class Hades extends Constellation {
+    // void say() {
+    // } ERROR
+}
+
+
+
 
