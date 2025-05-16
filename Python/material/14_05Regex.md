@@ -90,7 +90,7 @@ re.findall(r"\d{2,}", "Dazai has 7 apples, Hamin has 12, Jeha 345.")
 
 # Match words with exactly 3 letters
 re.findall(r"\b\w{3}\b", "Dok Ja is so sly")
-# Output: ['Dok', 'Ja', 'sly']
+# Output: ['Dok', 'sly']
 ```
 
 ---
@@ -183,6 +183,20 @@ re.findall(r"<\/?\w+>", "<p>Hello</p><div>World</div>")
 # Output: ['<p>', '</p>', '<div>', '</div>']
 ```
 
+### 6. ✅ Positive Lookahead: Must contain certain pattern
+
+```python
+pattern = r"^(?=.*[A-Z])(?=.*\d).+$"
+re.match(pattern, "A1b2c3")  # Valid: has uppercase & digit
+```
+
+### 7. ❌ Negative Lookahead: Must NOT contain pattern
+
+```python
+pattern = r"^(?!.*badword).+$"
+re.match(pattern, "clean content")  # Valid: no badword
+```
+
 ---
 
 ## ⚠️ Common Mistakes in Regex
@@ -209,4 +223,4 @@ Regex is an indispensable tool for string processing, text analysis, data valida
 
 ---
 
-Feel free to ask if you need further assistance or examples!
+Feel free to ask if you need further assistance or examples! 🔍✨
