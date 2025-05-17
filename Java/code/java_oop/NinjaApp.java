@@ -66,7 +66,7 @@ class Ninja {
 }
 
 
-public class u {
+public class NinjaApp {
     public static void main(String[] args) {
         Ninja ninja = new Ninja();
 
