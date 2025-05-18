@@ -105,6 +105,4 @@ Java is evolving fast — no more 90s vibes only!
 
 That’s Java — the dependable, stylish grandpa of the programming world ☕👴
 
----
-
 ###
