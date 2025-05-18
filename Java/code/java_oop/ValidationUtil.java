@@ -1,3 +1,5 @@
+import java.lang.reflect.Field;
+
 public class ValidationUtil {
     public static void validateNinja(Ninja ninja) throws ValidationException {
         if (ninja == null) {
@@ -26,6 +28,31 @@ public class ValidationUtil {
         }
         if (ninja.getElement() == null) {
             throw new BlankException("Ninja element cannot be null");
+        }
+    }
+
+    public static void validationReflection(Object object) {
+        Class aClass = object.getClass();
+        Field[] fields = aClass.getDeclaredFields();
+
+        for (var field : fields) {
+            field.setAccessible(true);
+
+            if (field.getAnnotation(w.class) != null) {
+                // validated
+
+                try {
+                    String value = (String) field.get(object);
+                    if (value == null || value.isEmpty()) {
+                        throw new BlankException("Field " + field.getName() + " cannot be empty");
+                    }
+                } catch (IllegalAccessException exception) {
+                    System.out.println("Cant access field " + field.getName());
+
+                }
+
+            }
+
         }
     }
 }
