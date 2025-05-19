@@ -96,7 +96,19 @@ df.tail()       # Last 5 rows
 df.shape        # (rows, columns)
 df.info()       # Data summary
 df.describe()   # Stats summary
+df.columns      # List of column names
+df.dtypes       # Data types of each column
 ```
+
+### 🧾 Explanation:
+
+* `df.head(n)` → Returns the first `n` rows of the DataFrame (default is 5).
+* `df.tail(n)` → Returns the last `n` rows of the DataFrame (default is 5).
+* `df.shape` → Returns a tuple representing the dimensionality (rows, columns).
+* `df.info()` → Shows a concise summary of the DataFrame including index dtype, columns, non-null values, and memory usage.
+* `df.describe()` → Generates descriptive statistics including count, mean, std, min, 25%, 50%, 75%, and max.
+* `df.columns` → Returns an Index object containing the column labels.
+* `df.dtypes` → Returns the data type of each column.
 
 ---
 
@@ -110,6 +122,12 @@ You can also use dot notation if no space:
 
 ```python
 df.Name
+```
+
+To access multiple columns:
+
+```python
+df[['Name', 'Score']]
 ```
 
 ---
@@ -128,12 +146,70 @@ df[df['Score'] > 85]  # Filter rows with Score > 85
 2  Dokja     88
 ```
 
+You can also use:
+
+```python
+df.query('Score > 85')
+```
+
+To filter with multiple conditions:
+
+```python
+df[(df['Score'] > 85) & (df['Name'] != 'Jeha')]
+```
+
+---
+
+## 📊 Exploring Data Further
+
+### 📌 Sorting Values
+
+```python
+df.sort_values(by='Score', ascending=False)
+```
+
+You can sort by multiple columns:
+
+```python
+df.sort_values(by=['Score', 'Name'], ascending=[False, True])
+```
+
+### 📌 Value Counts (Count Frequency)
+
+```python
+df['Name'].value_counts()
+```
+
+**Output:**
+
+```
+Jeha     1
+Hamin    1
+Dokja    1
+Name: Name, dtype: int64
+```
+
+This is useful for summarizing categorical data.
+
+### 📌 Unique Values & Count
+
+```python
+df['Name'].unique()       # Unique values
+df['Name'].nunique()      # Number of unique values
+```
+
 ---
 
 ## 🧱 Adding Columns
 
 ```python
 df['Passed'] = df['Score'] >= 85
+```
+
+You can also compute new columns:
+
+```python
+df['Bonus'] = df['Score'] * 0.1
 ```
 
 ---
@@ -149,6 +225,10 @@ df.drop(1, axis=0)
 
 > Use `inplace=True` to apply changes directly.
 
+```python
+df.drop('Passed', axis=1, inplace=True)
+```
+
 ---
 
 ## ✏️ Editing Data
@@ -160,17 +240,9 @@ df.iat[0, 1] = 95        # Set by position
 
 ---
 
-## 📊 Sorting
-
-```python
-df.sort_values(by='Score', ascending=False)
-```
-
----
-
 ## 🔗 Combining DataFrames
 
-### 🔼 Append
+### 🔼 Append (concat)
 
 ```python
 df2 = pd.DataFrame({'Name': ['Dazai'], 'Score': [92]})
@@ -214,6 +286,13 @@ df.dropna()           # Remove rows with missing values
 df.fillna(0)          # Replace with 0
 ```
 
+You can also fill with method:
+
+```python
+df.fillna(method='ffill')  # Forward fill
+df.fillna(method='bfill')  # Backward fill
+```
+
 ---
 
 ## 🔁 Loop through DataFrame
@@ -223,12 +302,23 @@ for index, row in df.iterrows():
     print(row['Name'], row['Score'])
 ```
 
+> ⚠️ Not recommended for large DataFrames — use vectorized operations.
+
 ---
 
 ## 🔄 Apply Function
 
 ```python
 df['Score'] = df['Score'].apply(lambda x: x + 5)
+```
+
+You can define a function too:
+
+```python
+def adjust_score(score):
+    return score + 10
+
+df['Adjusted'] = df['Score'].apply(adjust_score)
 ```
 
 ---
@@ -238,25 +328,33 @@ df['Score'] = df['Score'].apply(lambda x: x + 5)
 * Use `copy()` to avoid modifying the original.
 * Use `df.columns` and `df.dtypes` to inspect structure.
 * Use `query()` for readable filtering.
+* Use `.loc[]` and `.iloc[]` for advanced selection.
 
 ```python
-df.query('Score >= 90')
+# Label-based
+print(df.loc[0, 'Name'])
+
+# Position-based
+print(df.iloc[0, 0])
 ```
 
 ---
 
 ## 🎯 Summary Table
 
-| Function              | Description        |
-| --------------------- | ------------------ |
-| `pd.Series()`         | Create 1D array    |
-| `pd.DataFrame()`      | Create 2D table    |
-| `.head(), .tail()`    | Preview data       |
-| `.shape, .info()`     | Metadata           |
-| `.drop(), .fillna()`  | Clean data         |
-| `.merge(), .concat()` | Combine data       |
-| `.query()`            | Filter with string |
-| `.apply()`            | Apply function     |
+| Function                | Description        |
+| ----------------------- | ------------------ |
+| `pd.Series()`           | Create 1D array    |
+| `pd.DataFrame()`        | Create 2D table    |
+| `.head(), .tail()`      | Preview data       |
+| `.shape, .info()`       | Metadata           |
+| `.drop(), .fillna()`    | Clean data         |
+| `.merge(), .concat()`   | Combine data       |
+| `.query()`              | Filter with string |
+| `.apply()`              | Apply function     |
+| `.sort_values()`        | Sort data          |
+| `.value_counts()`       | Count categories   |
+| `.unique(), .nunique()` | Unique values      |
 
 ---
 
