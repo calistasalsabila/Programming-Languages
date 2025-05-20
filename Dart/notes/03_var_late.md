@@ -1,4 +1,4 @@
-## 🐬 Dart Variable Initialization: `String name;` — Is It Valid?
+## 🐋 Dart Variable Initialization: `String name;` — Is It Valid?
 
 In Dart, you might wonder whether you can declare a non-nullable variable like this:
 
@@ -83,4 +83,4 @@ Top-level variables or class members **require** either `late`, `?`, or direct i
 
 ---
 
-Happy Darting 🐬! Want to dive into `late final`, null safety in Flutter, or memory flow next?
+Happy Darting 🐋! Want to dive into `late final`, null safety in Flutter, or memory flow next?

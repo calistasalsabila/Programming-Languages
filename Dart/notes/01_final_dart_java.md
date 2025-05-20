@@ -1,4 +1,4 @@
-# 🐬 Dart vs ☕ Java: `final` Keyword Comparison
+# 🐋 Dart vs ☕ Java: `final` Keyword Comparison
 
 ## 🎯 Purpose of `final`
 
@@ -90,4 +90,4 @@ hero = "Hamin"; // ❌ Error: cannot assign a value to final variable
 * Dart gives more **flexibility** with type inference and offers both `final` and `const`.
 * Java is more **strict**, always requiring an explicit type declaration with `final`.
 
-> "Choose `final` when you know the value won’t change — no matter if you code in Dart 🐬 or Java ☕!"
+> "Choose `final` when you know the value won’t change — no matter if you code in Dart 🐋 or Java ☕!"

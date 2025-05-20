@@ -1,4 +1,4 @@
-# 🐬 Introduction to Dart Programming Language
+# 🐋 Introduction to Dart Programming Language
 
 Welcome to your journey with **Dart**, a modern programming language optimized for building fast apps on any platform. Dart is the primary language used for Flutter, but it also works well for server, desktop, and web development.
 

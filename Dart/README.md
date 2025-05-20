@@ -1,4 +1,4 @@
-# 🐬 Dart Folder Structure: `material` vs `notes` vs `code`
+# 🐋 Dart Folder Structure: `material` vs `notes` vs `code`
 
 ## ✨ Purpose
 

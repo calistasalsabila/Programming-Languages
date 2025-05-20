@@ -1,4 +1,4 @@
-# Understanding `final` and `const` in Dart 🐬
+# Understanding `final` and `const` in Dart 🐋
 
 ## 🎯 Goal
 
@@ -121,4 +121,4 @@ Const list2: [1, 2, 3]
 
 ---
 
-Made with ❤️ by Calista & Jip the AI 🐬
+Made with ❤️ by Calista & Jip the AI 🐋

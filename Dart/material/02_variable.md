@@ -1,4 +1,4 @@
-# 🐬 Dart Notes: Variables
+# 🐋 Dart Notes: Variables
 
 ## 📌 What is a Variable?
 
@@ -167,6 +167,6 @@ Dokja scored 95 in Royal Showdown. Victory: true
 
 ---
 
-Keep experimenting with 🐬 Dart and enjoy coding!
+Keep experimenting with 🐋 Dart and enjoy coding!
 
 > "Variables aren’t just data. They’re the actors in your code’s story!" 💙

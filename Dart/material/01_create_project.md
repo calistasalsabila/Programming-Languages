@@ -1,4 +1,4 @@
-# 🐬 How to Create a Dart Project
+# 🐋 How to Create a Dart Project
 
 ## 🎯 Purpose
 This document explains how to properly create a new Dart project using the `dart create` command, including naming rules, project structure, and common issues.
@@ -114,4 +114,4 @@ your_project_name/
 - Follow the official naming conventions for full compatibility with Dart and Flutter tools.
 - Understand the default folder structure to navigate your project confidently.
 
-> "A clean project name is the first step to a clean project. 🐬"
+> "A clean project name is the first step to a clean project. 🐋"

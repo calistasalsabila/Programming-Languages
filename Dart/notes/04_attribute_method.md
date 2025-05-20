@@ -1,4 +1,4 @@
-# 🐬 Dart: Attribute vs Method (With Comparison to Python & Java)
+# 🐋 Dart: Attribute vs Method (With Comparison to Python & Java)
 
 ## 🎯 Goal
 
