@@ -48,7 +48,20 @@ final currentDate = DateTime.now();
 const pi = 3.14159;
 ```
 
-🧠 **Note:** `const` variables are implicitly `final`.
+🧐 **Note:** `const` variables are implicitly `final`.
+
+### 5. `late`
+
+* Use `late` when you want to **declare a non-nullable variable** that will be **initialized later**, but **not immediately**.
+* This is useful when the value is **not available at the point of declaration**, but you are sure it **will be assigned before use**.
+
+```dart
+late String emperor;
+emperor = 'Dazai';
+print(emperor); // Works fine because it's assigned before use
+```
+
+⚠️ **Warning:** If you access a `late` variable before it's initialized, it throws a runtime error.
 
 ---
 
@@ -102,6 +115,7 @@ Use `?` for nullable types.
 * Prefer `var` or explicit types for clarity.
 * Use `final` as a default unless mutation is required.
 * Avoid `dynamic` unless absolutely necessary.
+* Use `late` if you know a variable will be assigned **later**, not now.
 * Use **camelCase** for all variable names.
 
 ---
@@ -143,12 +157,13 @@ Dokja scored 95 in Royal Showdown. Victory: true
 
 ## ✅ Summary Table
 
-| Keyword   | Type Inferred | Mutable | Compile-Time Const | Notes                           |
-| --------- | ------------- | ------- | ------------------ | ------------------------------- |
-| `var`     | ✅             | ✅       | ❌                  | Best for inferred, mutable vars |
-| `dynamic` | ❌             | ✅       | ❌                  | Avoid unless needed             |
-| `final`   | ✅/Explicit    | ❌       | ❌                  | Set once at runtime             |
-| `const`   | ✅/Explicit    | ❌       | ✅                  | Set once at compile time        |
+| Keyword   | Type Inferred | Mutable | Compile-Time Const | Notes                                 |
+| --------- | ------------- | ------- | ------------------ | ------------------------------------- |
+| `var`     | ✅             | ✅       | ❌                  | Best for inferred, mutable vars       |
+| `dynamic` | ❌             | ✅       | ❌                  | Avoid unless needed                   |
+| `final`   | ✅/Explicit    | ❌       | ❌                  | Set once at runtime                   |
+| `const`   | ✅/Explicit    | ❌       | ✅                  | Set once at compile time              |
+| `late`    | ✅/Explicit    | ✅       | ❌                  | Initialized later (non-nullable only) |
 
 ---
 
