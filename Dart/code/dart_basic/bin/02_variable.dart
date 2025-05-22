@@ -1,3 +1,6 @@
+/// [slash 3x] -> documentatiton comment , digenerate jadi dart doc
+
+
 // without variable
 void main() {
   print("wut");
