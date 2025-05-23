@@ -79,14 +79,4 @@ In this repository, I separate my Dart learning content into different folders t
 
 ---
 
-## 💡 Example Scenario:
-
-If I'm learning Dart:
-
-* `material/dart/variables.md` → All about variables, full explanation.
-* `notes/dart/why-use-final.md` → My random question: “Why not always use `var` instead of `final`?” with my own reasoning and conclusion.
-* `code/dart/variables_demo.dart` → A small Dart program testing different variable declarations.
-
----
-
 > "Learning isn't always clean. That's why I separate the polished 📘 from the messy 📝 and the applied 💻 — and all three are important."
