@@ -32,7 +32,7 @@ This enforces Object-Oriented Programming (OOP) principles right from the start.
 
 ---
 
-## 3. \*\*The Rise of \*\***`record`**
+## 3. **The Rise of `record`**
 
 Before Java 14, creating a simple data class required a *lot* of boilerplate:
 
