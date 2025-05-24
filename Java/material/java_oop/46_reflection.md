@@ -119,4 +119,3 @@ Secret: Omniscient Reader
 ---
 
 Java Reflection: A mirror to your code’s soul 🪞✨
-Great job diving deep, Dokja, Jeha, Hamin, and Dazai! 🚀💻
