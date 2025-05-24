@@ -9,7 +9,7 @@ Even though Java is often seen as a "serious" and enterprise-heavy language, it 
 Java *loves clarity*. You must declare types explicitly:
 
 ```java
-String username = "Calista";
+String username = "Calista S";
 ```
 
 Unlike Python where you can just write `username = "Calista"`, Java wants you to be crystal clear about the data type. Why? Because this leads to safer, more maintainable code in large-scale systems.
