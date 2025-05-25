@@ -139,6 +139,3 @@ Result: `backup_project.zip` will appear in your directory. 🗃️
 * [zipfile — Python Docs](https://docs.python.org/3/library/zipfile.html)
 * [shutil — Python Docs](https://docs.python.org/3/library/shutil.html)
 
----
-
-🧙‍♀️ *Now Dokja, Jeha, Hamin, and Dazai know how to archive their worlds with Python.* 💼🐍
