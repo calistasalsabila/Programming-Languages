@@ -157,4 +157,3 @@ print("Execution time:", time_taken)
 
 > 🚀 *Useful for scheduling apps, timers, performance checks, and data logging.*
 
-Made with 🧠 by Dokja, Jeha, Hamin & Dazai ✨
