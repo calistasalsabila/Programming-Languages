@@ -16,11 +16,12 @@ Logical operators allow us to:
 
 ## 🧠 List of Logical Operators
 
-| Operator | Name        | Description                                        |            |                                                    |
-| -------- | ----------- | -------------------------------------------------- | ---------- | -------------------------------------------------- |
-| `&&`     | Logical AND | Returns `true` if **both** operands are true       |            |                                                    |
-| \`       |             | \`                                                 | Logical OR | Returns `true` if **at least one** operand is true |
-| `!`      | Logical NOT | Returns `true` if operand is false, and vice versa |            |                                                    |
+| Operator | Name         | Description                                         |
+|----------|--------------|-----------------------------------------------------|
+| `&&`     | Logical AND  | Returns `true` if **both** operands are true        |
+| `||`     | Logical OR   | Returns `true` if **at least one** operand is true  |
+| `!`      | Logical NOT  | Returns `true` if operand is false, and vice versa  |
+
 
 ---
 
