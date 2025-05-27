@@ -19,7 +19,7 @@ Logical operators allow us to:
 | Operator | Name         | Description                                         |
 |----------|--------------|-----------------------------------------------------|
 | `&&`     | Logical AND  | Returns `true` if **both** operands are true        |
-| `&#124;&#124;` | Logical OR   | Returns `true` if **at least one** operand is true  |
+| || | Logical OR   | Returns `true` if **at least one** operand is true  |
 | `!`      | Logical NOT  | Returns `true` if operand is false, and vice versa  |
 
 
