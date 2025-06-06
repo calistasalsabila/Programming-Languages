@@ -8,7 +8,6 @@ Each programming language has its own dedicated folder, which includes the follo
 - **code/** → Contains source code and implementations.
 - **material/** → Includes theoretical materials, notes, and explanations.
 - **studycase/** → Provides practical study cases and real-world examples.
-- **project/** → Includes learning-based projects from courses, exercises, or experiments.
 
 
 ## 📌 Available Languages
