@@ -124,6 +124,7 @@ void main() {
 * Use `late` if you must initialize a non-nullable variable later
 * Use null-aware operators for safer code
 
+
 ```dart
 late String username;
 

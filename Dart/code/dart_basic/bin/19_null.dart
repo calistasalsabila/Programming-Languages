@@ -10,5 +10,5 @@ void main() {
   // atau gini
   int number3;
   number3 = 3;
-  // number3 = null; error
+  // number3 = null; error karena int tanpa ? tidak nullable
 }
