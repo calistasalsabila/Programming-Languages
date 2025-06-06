@@ -24,6 +24,8 @@ String name = 'Dokja'; // non-nullable variable
   * `?.` (null-aware access)
   * `??=` (assign if null)
 
+---
+
 ## 🔍 Example 1: Nullable variable
 
 ```dart
@@ -36,7 +38,7 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 🦪 Output
 
 ```
 null
@@ -59,7 +61,7 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 🦪 Output
 
 ```
 Jeha
@@ -89,7 +91,34 @@ void main() {
 }
 ```
 
-## 🔍 Example 4: Null coalescing `??`
+## 📚 Explanation
+
+* `user?.nickname` safely tries to access `nickname` only if `user` is not null.
+* If `user` is `null`, it returns `null` without error.
+
+---
+
+## 🔍 Example 4: Access nullable member of non-null object
+
+```dart
+class Book {
+  String? title;
+}
+
+void main() {
+  Book book = Book();
+  print(book.title?.length); // prints: null
+}
+```
+
+## 📚 Explanation
+
+* `book.title` is nullable, so accessing `length` must also be done safely.
+* `book.title?.length` prevents runtime error if `title` is null.
+
+---
+
+## 🔍 Example 5: Null coalescing `??`
 
 ```dart
 void main() {
@@ -98,7 +127,9 @@ void main() {
 }
 ```
 
-## 🔍 Example 5: Null-aware assignment `??=`
+---
+
+## 🔍 Example 6: Null-aware assignment `??=`
 
 ```dart
 void main() {
@@ -115,6 +146,7 @@ void main() {
 * Forgetting to initialize non-nullable variables → compile error
 * Misusing `!` when value might be `null` → runtime crash
 * Assuming `?.` will prevent all errors (it only works on nullable targets)
+* Accessing nullable members without null-aware operator → runtime crash
 
 ---
 
@@ -123,7 +155,6 @@ void main() {
 * Prefer non-nullable types when possible
 * Use `late` if you must initialize a non-nullable variable later
 * Use null-aware operators for safer code
-
 
 ```dart
 late String username;
